@@ -1,0 +1,5 @@
+model,total_params,trainable_params,size_kb,n_channels,n_times,architecture_note
+EEGNet,2018,2018,7.9,3,876,Depthwise separable CNN — designed for EEG
+ShallowConvNet,10082,10082,39.4,3,876,Shallow FBCSP-inspired CNN
+Tiny Transformer,15000,15000,58.6,3,876,"d_model=32, 2 encoder layers, 4 attention heads, dim_ff=64"
+CSP + LDA,N/A,N/A,< 1,3,876,Classical method: CSP spatial filters + LDA classifier
