@@ -1,0 +1,3 @@
+seed,model,accuracy,brier_score,brier_chance_level,brier_interpretation,ece,ece_interpretation
+3,EEGNet,0.6138888888888889,0.4656446577644066,0.5,better than chance,0.06757173554764852,moderately overconfident
+3,ShallowConvNet,0.7131944444444445,0.3804430700069757,0.5,better than chance,0.11296981626914604,moderately overconfident

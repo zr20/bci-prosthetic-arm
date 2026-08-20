@@ -1,0 +1,55 @@
+Running with seed=2, device=mps
+
+=== EEGNet — Within-subject (seed=2) ===
+  Subject 1: acc=0.469, f1=0.414
+  Subject 2: acc=0.506, f1=0.025
+  Subject 3: acc=0.550, f1=0.576
+  Subject 4: acc=0.631, f1=0.681
+  Subject 5: acc=0.506, f1=0.503
+  Subject 6: acc=0.525, f1=0.465
+  Subject 7: acc=0.569, f1=0.343
+  Subject 8: acc=0.644, f1=0.447
+  Subject 9: acc=0.512, f1=0.669
+
+=== EEGNet — Cross-subject (seed=2) ===
+  Holdout 1: acc=0.794, f1=0.779
+  Holdout 2: acc=0.625, f1=0.516
+  Holdout 3: acc=0.487, f1=0.590
+  Holdout 4: acc=0.944, f1=0.940
+  Holdout 5: acc=0.831, f1=0.854
+  Holdout 6: acc=0.750, f1=0.692
+  Holdout 7: acc=0.850, f1=0.857
+  Holdout 8: acc=0.806, f1=0.836
+  Holdout 9: acc=0.856, f1=0.870
+
+=== ShallowConvNet — Within-subject (seed=2) ===
+  Subject 1: acc=0.725, f1=0.738
+  Subject 2: acc=0.500, f1=0.518
+  Subject 3: acc=0.519, f1=0.621
+  Subject 4: acc=0.938, f1=0.940
+  Subject 5: acc=0.819, f1=0.824
+  Subject 6: acc=0.625, f1=0.720
+  Subject 7: acc=0.694, f1=0.602
+  Subject 8: acc=0.812, f1=0.810
+  Subject 9: acc=0.794, f1=0.800
+
+=== ShallowConvNet — Cross-subject (seed=2) ===
+  Holdout 1: acc=0.675, f1=0.726
+  Holdout 2: acc=0.500, f1=0.500
+  Holdout 3: acc=0.506, f1=0.586
+  Holdout 4: acc=0.969, f1=0.969
+  Holdout 5: acc=0.713, f1=0.777
+  Holdout 6: acc=0.631, f1=0.487
+  Holdout 7: acc=0.775, f1=0.806
+  Holdout 8: acc=0.819, f1=0.847
+  Holdout 9: acc=0.819, f1=0.840
+
+=== Summary (seed=2) ===
+                       accuracy     f1
+model          split                  
+EEGNet         cross      0.772  0.771
+               within     0.546  0.458
+ShallowConvNet cross      0.712  0.726
+               within     0.714  0.730
+
+Saved to /Users/zarakhursheed/bci_paper/results/seed_2/deep_baselines_seed2.csv

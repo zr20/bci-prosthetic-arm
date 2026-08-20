@@ -1,0 +1,14 @@
+# Data splits (too large for GitHub — share via link separately)
+processed_data_2b/
+*.npz
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/

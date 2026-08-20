@@ -1,0 +1,75 @@
+Cross-dataset transfer: BCI IV-2b to BCI IV-2a
+Seed=42, device=mps
+
+Loading BCI IV-2b source data...
+  2b Subject 1: 400 trials
+  2b Subject 2: 400 trials
+  2b Subject 3: 400 trials
+  2b Subject 4: 420 trials
+  2b Subject 5: 420 trials
+  2b Subject 6: 400 trials
+  2b Subject 7: 400 trials
+  2b Subject 8: 440 trials
+  2b Subject 9: 400 trials
+Source total: (3680, 3, 876)
+Source amplitude std: 2.93 (should be ~2-10)
+
+Loading and harmonising BCI IV-2a target data...
+  Channel subset: C3 (idx 7), Cz (idx 9), C4 (idx 11)
+  Epoch trim: 1001 -> 875 samples
+  Sampling rate: 250Hz (identical)
+  Labels: left_hand->0, right_hand->1
+  Scaling: NONE — MOABB already returns microvolts
+  2a Subject 1: 288 trials, std=6.11
+  2a Subject 2: 288 trials, std=8.40
+  2a Subject 3: 288 trials, std=7.32
+  2a Subject 4: 288 trials, std=5.62
+  2a Subject 5: 288 trials, std=5.45
+  2a Subject 6: 288 trials, std=8.96
+  2a Subject 7: 288 trials, std=5.63
+  2a Subject 8: 288 trials, std=9.40
+  2a Subject 9: 288 trials, std=10.13
+
+=== Training EEGNet on BCI IV-2b ===
+    Epoch 10/30 done
+    Epoch 20/30 done
+    Epoch 30/30 done
+
+=== Testing EEGNet on BCI IV-2a subjects ===
+  2a Subject 1: acc=0.663, f1=0.617
+  2a Subject 2: acc=0.528, f1=0.511
+  2a Subject 3: acc=0.698, f1=0.584
+  2a Subject 4: acc=0.535, f1=0.646
+  2a Subject 5: acc=0.517, f1=0.347
+  2a Subject 6: acc=0.576, f1=0.663
+  2a Subject 7: acc=0.566, f1=0.642
+  2a Subject 8: acc=0.611, f1=0.525
+  2a Subject 9: acc=0.503, f1=0.370
+
+=== Training ShallowConvNet on BCI IV-2b ===
+    Epoch 10/30 done
+    Epoch 20/30 done
+    Epoch 30/30 done
+
+=== Testing ShallowConvNet on BCI IV-2a subjects ===
+  2a Subject 1: acc=0.594, f1=0.707
+  2a Subject 2: acc=0.503, f1=0.667
+  2a Subject 3: acc=0.646, f1=0.729
+  2a Subject 4: acc=0.514, f1=0.673
+  2a Subject 5: acc=0.535, f1=0.660
+  2a Subject 6: acc=0.503, f1=0.668
+  2a Subject 7: acc=0.535, f1=0.678
+  2a Subject 8: acc=0.507, f1=0.670
+  2a Subject 9: acc=0.517, f1=0.674
+
+=== Summary (seed=42) ===
+                accuracy     f1
+model                          
+EEGNet             0.578  0.545
+ShallowConvNet     0.539  0.681
+
+=== Domain Robustness Gap ===
+  EEGNet: within-dataset=0.756, cross-dataset=0.578, domain gap=+0.179
+  ShallowConvNet: within-dataset=0.713, cross-dataset=0.539, domain gap=+0.174
+
+Saved to /Users/zarakhursheed/bci_paper/results/seed_42/cross_dataset_seed42.csv

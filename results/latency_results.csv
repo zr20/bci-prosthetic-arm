@@ -1,0 +1,5 @@
+model,mean_ms,std_ms,min_ms,max_ms,pass_100ms
+CSP+LDA,0.21,0.17,0.16,1.68,TRUE
+EEGNet,0.35,0.15,0.28,1.24,TRUE
+ShallowConvNet,0.31,0.08,0.27,0.98,TRUE
+Transformer,15.01,0.96,13.04,16.82,TRUE

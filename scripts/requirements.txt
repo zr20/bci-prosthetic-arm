@@ -1,0 +1,95 @@
+aiohappyeyeballs==2.6.2
+aiohttp==3.14.1
+aiosignal==1.4.0
+async-timeout==5.0.1
+attrs==26.1.0
+axial_positional_embedding==0.3.12
+braindecode==1.2.0
+brotlicffi @ file:///opt/miniconda3/conda-bld/brotlicffi_1764961161728/work
+certifi @ file:///Users/ec2-user/croot/certifi_1779370298625/work/certifi
+cffi @ file:///opt/miniconda3/conda-bld/cffi_1761832772717/work
+charset-normalizer @ file:///opt/miniconda3/conda-bld/charset-normalizer_1761744841364/work
+CoLT5-attention==0.11.1
+contourpy==1.3.2
+coverage==7.14.2
+cycler==0.12.1
+decorator==5.3.1
+docstring-inheritance==3.0.0
+edfio==0.4.13
+EDFlib-Python==1.0.8
+einops==0.8.2
+exceptiongroup==1.3.1
+filelock @ file:///Users/ec2-user/croot/filelock_1781703329174/work
+fonttools==4.63.0
+frozenlist==1.8.0
+fsspec==2026.6.0
+gmpy2 @ file:///opt/miniconda3/conda-bld/gmpy2_1764747893574/work
+h5py==3.8.0
+hyper-connections==0.4.11
+idna @ file:///Users/ec2-user/croot/idna_1780561399149/work
+iniconfig==2.3.0
+Jinja2 @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_2cnn4kenrm/croot/jinja2_1741710859444/work
+joblib==1.5.3
+kiwisolver==1.5.0
+lazy-loader==0.5
+lightning-utilities==0.15.3
+linear-attention-transformer==0.19.1
+linformer==0.2.3
+local-attention==1.11.2
+MarkupSafe @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1f_uj4vxik/croot/markupsafe_1738584045311/work
+matplotlib==3.10.9
+memory-profiler==0.61.0
+mne==1.12.1
+mne-bids==0.17.0
+moabb==1.0.0
+mpmath @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_17iu6a8a3m/croot/mpmath_1690848269369/work
+multidict==6.7.1
+networkx @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_e6lt1dcyid/croot/networkx_1737040482044/work
+numpy==1.26.4
+packaging==26.0
+pandas==1.5.3
+pillow @ file:///Users/ec2-user/croot/pillow_1780988597856/work
+platformdirs==4.10.0
+pluggy==1.6.0
+pooch==1.9.0
+product_key_memory==0.3.0
+propcache==0.5.2
+psutil==7.2.2
+pybv==0.8.1
+pycountry==26.2.16
+pycparser @ file:///Users/ec2-user/croot/pycparser_1774959675136/work
+Pygments==2.20.0
+pymatreader==1.2.3
+pyparsing==3.3.2
+pyriemann==0.5
+PySocks @ file:///opt/miniconda3/conda-bld/pysocks_1761753011241/work
+pytest==7.4.4
+python-dateutil==2.9.0.post0
+pytorch-lightning==2.6.5
+pytz==2026.2
+PyYAML @ file:///opt/miniconda3/conda-bld/pyyaml_1763465492983/work
+reportlab==5.0.0
+requests @ file:///Users/ec2-user/croot/requests_1780348925134/work
+scikit-learn==1.7.2
+scipy==1.15.3
+seaborn==0.12.2
+six==1.17.0
+skorch==1.4.0
+soundfile==0.14.0
+sympy==1.13.1
+tabulate==0.10.0
+threadpoolctl==3.6.0
+tomli==2.4.1
+torch==2.5.1
+torch-einops-utils==0.1.4
+torchaudio==2.5.1
+torchinfo==1.8.0
+torchmetrics==1.9.0
+torchvision==0.20.1
+tqdm==4.68.3
+typing_extensions @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_dffmcwqo6o/croot/typing_extensions_1756281471323/work
+tzdata==2026.2
+urllib3==1.26.20
+wfdb==4.3.1
+xmltodict==1.0.4
+yarl==1.24.2

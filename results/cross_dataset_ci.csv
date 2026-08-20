@@ -1,0 +1,3 @@
+model,source,target,mean_accuracy,std,ci_lower,ci_upper,n_observations
+EEGNet,BCI-IV-2b,BCI-IV-2a,0.5886,0.0654,0.5687,0.6084,45
+ShallowConvNet,BCI-IV-2b,BCI-IV-2a,0.5656,0.072,0.5437,0.5875,45

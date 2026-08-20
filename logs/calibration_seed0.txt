@@ -1,0 +1,12 @@
+
+=== Calibration: EEGNet (seed=0) ===
+  Accuracy:    0.542
+  Brier Score: 0.4837  [chance=0.50 for binary; lower=better] → better than chance
+  ECE:         0.0379  [0=perfect calibration; lower=better] → well calibrated
+
+=== Calibration: ShallowConvNet (seed=0) ===
+  Accuracy:    0.719
+  Brier Score: 0.3878  [chance=0.50 for binary; lower=better] → better than chance
+  ECE:         0.1171  [0=perfect calibration; lower=better] → moderately overconfident
+
+Plots saved to /Users/zarakhursheed/bci_paper/results/seed_0/calibration_plots_seed0.png

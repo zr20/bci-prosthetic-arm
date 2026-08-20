@@ -1,0 +1,18 @@
+CONFIG = {
+    "seeds": [42, 0, 1, 2, 3],
+    "n_subjects": 9,
+    "n_channels": 3,
+    "sfreq": 250,
+    "tmin": 0.5,
+    "tmax": 4.0,
+    "fmin": 4,
+    "fmax": 40,
+    "notch": 50,
+    "scale": 1e6,
+    "batch_size": 128,
+    "lr": 1e-3,
+    "epochs": 30,
+    "data_dir": "/Users/zarakhursheed/processed_data_2b",
+    "results_dir": "/Users/zarakhursheed/bci_paper/results",
+    "checkpoint_dir": "/Users/zarakhursheed/bci_paper/checkpoints",
+}

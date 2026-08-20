@@ -1,0 +1,9 @@
+selected_threshold=0.83
+decoder=ShallowConvNet
+evaluation=within-subject
+dev_subjects=[7, 8, 9]
+eval_subjects=[1, 2, 3, 4, 5, 6]
+min_coverage=0.6
+error_rate_at_threshold=0.1429
+coverage_at_threshold=0.6125
+seed=42

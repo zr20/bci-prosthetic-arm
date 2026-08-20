@@ -1,0 +1,5 @@
+model,split,mean_accuracy,std,ci_lower,ci_upper,n_seeds
+EEGNet,cross,0.7561,0.129,0.7169,0.7953,45
+EEGNet,within,0.5776,0.127,0.539,0.6162,45
+ShallowConvNet,cross,0.7132,0.1401,0.6706,0.7558,45
+ShallowConvNet,within,0.7211,0.1414,0.6782,0.7641,45

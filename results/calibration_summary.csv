@@ -1,0 +1,7 @@
+model,metric,mean,ci_lower,ci_upper,n_seeds
+EEGNet,accuracy,0.5776,0.5367,0.6186,5
+EEGNet,brier_score,0.4773,0.4597,0.495,5
+EEGNet,ece,0.0375,0.012,0.0631,5
+ShallowConvNet,accuracy,0.7211,0.7111,0.7311,5
+ShallowConvNet,brier_score,0.3859,0.375,0.3967,5
+ShallowConvNet,ece,0.1111,0.1015,0.1207,5

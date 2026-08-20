@@ -1,0 +1,7 @@
+metric,value
+reactive_acc,0.6071428571428571
+forecast_acc,0.6265060240963856
+forecast_gain,0.019363166953528466
+reactive_time_s,4.5
+predictive_time_s,3.15
+time_saving_s,1.35

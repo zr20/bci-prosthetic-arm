@@ -1,0 +1,34 @@
+section,property,value
+source_2b,dataset,BCI Competition IV Dataset 2b (BNCI2014_004)
+source_2b,n_subjects,9
+source_2b,channels,"EEG:C3, EEG:Cz, EEG:C4"
+source_2b,n_channels,3
+source_2b,sampling_rate_hz,250
+source_2b,epoch_tmin_s,0.5
+source_2b,epoch_tmax_s,4.0
+source_2b,epoch_length_s,3.5
+source_2b,n_timepoints,875
+source_2b,bandpass_hz,4-40
+source_2b,notch_hz,50
+source_2b,classes,"left_hand=0, right_hand=1"
+source_2b,trials_per_subj,"400-440 (sessions 1+2 train, session 3 test)"
+target_2a,dataset,BCI Competition IV Dataset 2a (BNCI2014_001)
+target_2a,n_subjects,9
+target_2a,all_channels,"['Fz', 'FC3', 'FC1', 'FCz', 'FC2', 'FC4', 'C5', 'C3', 'C1', 'Cz', 'C2', 'C4', 'C6', 'CP3', 'CP1', 'CPz', 'CP2', 'CP4', 'P1', 'Pz', 'P2', 'POz', 'EOG1', 'EOG2', 'EOG3', 'stim']"
+target_2a,n_channels_total,26
+target_2a,sampling_rate_hz,250.0
+target_2a,original_epoch_window,"2.0s to 6.0s (interval=[2,6])"
+target_2a,original_n_timepoints,1001
+target_2a,classes_available,"{'left_hand', 'right_hand'}"
+target_2a,trials_subject_1,288
+harmonisation,step_1_channels,"Subset 22 channels to C3 (idx 7), Cz (idx 9), C4 (idx 11) — matching 2b channel set"
+harmonisation,step_2_sampling_rate,No resampling required — both datasets recorded at 250 Hz
+harmonisation,step_3_epoch_window,Trim 2a epoch from 1001 samples (2-6s) to 875 samples (first 3.5s) — matching 2b epoch length of 875 timepoints (0.5s to 4.0s at 250 Hz)
+harmonisation,step_4_bandpass,Apply 4-40 Hz bandpass via MOABB LeftRightImagery paradigm — identical to 2b preprocessing
+harmonisation,step_5_labels,"Remap: left_hand → 0, right_hand → 1 — identical to 2b labels"
+harmonisation,step_6_scaling,Multiply by 1e6 (Volts to microvolts) before model input — identical to 2b scaling
+harmonisation,remaining_difference,"2a has 288 trials/subject vs 2b 400-440 trials/subject — not harmonised, noted as a domain difference"
+verification,harmonised_shape,"(288, 3, 875)"
+verification,channel_match,YES
+verification,timepoint_match,YES
+verification,sfreq_match,YES

@@ -1,0 +1,23 @@
+=== Threshold Selection — ShallowConvNet Within-Subject ===
+Development subjects: [7, 8, 9]
+Evaluation subjects:  [1, 2, 3, 4, 5, 6]
+Minimum coverage:     60%
+
+Training within-subject ShallowConvNet on dev subjects...
+  Subject 7: 160 trials, mean conf=0.828
+  Subject 8: 160 trials, mean conf=0.861
+  Subject 9: 160 trials, mean conf=0.846
+
+Dev set: 480 trials total
+Baseline accuracy (no abstention): 0.769
+Mean confidence: 0.845
+
+=== Selected Threshold: 0.83 ===
+  Error rate at threshold: 0.143
+  Coverage at threshold:   0.613
+  Abstention rate:         0.387
+
+This threshold is FROZEN for all final evaluations.
+
+Saved to /Users/zarakhursheed/bci_paper/results/selected_threshold.txt
+Plot saved to /Users/zarakhursheed/bci_paper/results/threshold_selection_shallow.png

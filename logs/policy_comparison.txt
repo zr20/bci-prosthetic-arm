@@ -1,0 +1,58 @@
+=== Three-Policy Replay Comparison ===
+Decoder:          ShallowConvNet (within-subject)
+Seed:             42
+Frozen threshold: 0.83
+Subjects:         [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Label:            OFFLINE REPLAY SIMULATION
+
+Subject 1:
+  Policy_A_Direct: success=0.719, coverage=1.000, unsafe=45, latency=3.56ms
+  Policy_B_ConfidenceGated: success=0.884, coverage=0.537, unsafe=10, latency=3.85ms
+  Policy_C_SharedControl: success=0.884, coverage=0.537, unsafe=10, latency=6.39ms
+Subject 2:
+  Policy_A_Direct: success=0.512, coverage=1.000, unsafe=78, latency=3.24ms
+  Policy_B_ConfidenceGated: success=0.569, coverage=0.406, unsafe=28, latency=3.63ms
+  Policy_C_SharedControl: success=0.569, coverage=0.406, unsafe=28, latency=6.19ms
+Subject 3:
+  Policy_A_Direct: success=0.500, coverage=1.000, unsafe=80, latency=3.29ms
+  Policy_B_ConfidenceGated: success=0.509, coverage=0.331, unsafe=26, latency=3.75ms
+  Policy_C_SharedControl: success=0.509, coverage=0.331, unsafe=26, latency=6.30ms
+Subject 4:
+  Policy_A_Direct: success=0.994, coverage=1.000, unsafe=1, latency=2.73ms
+  Policy_B_ConfidenceGated: success=1.000, coverage=0.944, unsafe=0, latency=4.70ms
+  Policy_C_SharedControl: success=1.000, coverage=0.944, unsafe=0, latency=6.05ms
+Subject 5:
+  Policy_A_Direct: success=0.875, coverage=1.000, unsafe=20, latency=2.29ms
+  Policy_B_ConfidenceGated: success=0.928, coverage=0.519, unsafe=6, latency=3.74ms
+  Policy_C_SharedControl: success=0.928, coverage=0.519, unsafe=6, latency=6.27ms
+Subject 6:
+  Policy_A_Direct: success=0.662, coverage=1.000, unsafe=54, latency=3.17ms
+  Policy_B_ConfidenceGated: success=0.728, coverage=0.644, unsafe=28, latency=3.45ms
+  Policy_C_SharedControl: success=0.728, coverage=0.644, unsafe=28, latency=6.37ms
+Subject 7:
+  Policy_A_Direct: success=0.688, coverage=1.000, unsafe=50, latency=3.32ms
+  Policy_B_ConfidenceGated: success=0.780, coverage=0.569, unsafe=20, latency=3.86ms
+  Policy_C_SharedControl: success=0.780, coverage=0.569, unsafe=20, latency=6.42ms
+Subject 8:
+  Policy_A_Direct: success=0.838, coverage=1.000, unsafe=26, latency=2.41ms
+  Policy_B_ConfidenceGated: success=0.925, coverage=0.662, unsafe=8, latency=3.39ms
+  Policy_C_SharedControl: success=0.925, coverage=0.662, unsafe=8, latency=6.27ms
+Subject 9:
+  Policy_A_Direct: success=0.781, coverage=1.000, unsafe=35, latency=3.16ms
+  Policy_B_ConfidenceGated: success=0.856, coverage=0.606, unsafe=14, latency=3.84ms
+  Policy_C_SharedControl: success=0.856, coverage=0.606, unsafe=14, latency=6.23ms
+
+=== Final Policy Comparison (mean across 9 subjects) ===
+Metric                          Policy A       Policy B       Policy C
+-------------------------------------------------------------------
+Success rate                       0.730          0.798          0.798
+Error rate                         0.270          0.202          0.202
+Coverage                           1.000          0.580          0.580
+Abstention rate                    0.000          0.420          0.420
+Unsafe actions                       389            140            140
+Mean latency (ms)                  3.020          3.802          6.275
+
+Decoder:   ShallowConvNet, within-subject, seed=42
+Threshold: 0.83 (frozen on dev subjects 7-9)
+Results saved to /Users/zarakhursheed/bci_paper/results
+Note: OFFLINE REPLAY SIMULATION per publication plan.
