@@ -1,0 +1,13 @@
+n_times (epoch length): 876 samples
+n_channels: 3  (C3, Cz, C4)
+
+=== Model Parameter Counts ===
+
+Model                  Total Params    Trainable  Size (KB) Notes
+---------------------------------------------------------------------------
+EEGNet                        2,018        2,018        7.9 KB   Depthwise separable CNN — designed for EEG
+ShallowConvNet               10,082       10,082       39.4 KB   Shallow FBCSP-inspired CNN
+Tiny Transformer             15,000       15,000       58.6 KB   d_model=32, 2 layers, 4 heads (approximate)
+CSP + LDA                       N/A          N/A        < 1 KB   Classical method — no neural network parameters
+
+Saved to /Users/zarakhursheed/bci_paper/results/parameter_counts.csv
