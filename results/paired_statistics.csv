@@ -1,7 +1,7 @@
 comparison,metric,mean_diff,ci_lower,ci_upper,t_stat,t_p,t_significant,wilcoxon_stat,wilcoxon_p,w_significant,cohens_d,effect_size
-Policy A vs Policy B,success_rate,0.0678,0.0313,0.1042,4.2825,0.0027,True,0.0,0.0039,True,1.4275,large
-Policy A vs Policy C,success_rate,0.0678,0.0313,0.1042,4.2825,0.0027,True,0.0,0.0039,True,1.4275,large
+Policy A vs Policy B,success_rate,0.0186,-0.0727,0.1098,0.4696,0.6512,False,9.0,0.1289,False,0.1565,negligible
+Policy A vs Policy C,success_rate,0.0186,-0.0727,0.1098,0.4696,0.6512,False,9.0,0.1289,False,0.1565,negligible
 Policy B vs Policy C,success_rate,0.0,N/A,N/A,N/A,N/A,False,N/A,N/A,False,0.0,negligible
-Policy A vs Policy B,coverage,-0.4202,-0.5537,-0.2866,-7.2528,0.0001,True,0.0,0.0039,True,-2.4176,large
-Policy A vs Policy B,error_rate,-0.0678,-0.1042,-0.0313,-4.2825,0.0027,True,0.0,0.0039,True,-1.4275,large
-Policy A vs Policy B,abstention_rate,0.4202,0.2866,0.5537,7.2534,0.0001,True,0.0,0.0039,True,2.4178,large
+Policy A vs Policy B,coverage,-0.8458,-0.9108,-0.7808,-30.0135,0.0,True,0.0,0.0039,True,-10.0045,large
+Policy A vs Policy B,error_rate,-0.0186,-0.1098,0.0727,-0.4696,0.6512,False,9.0,0.1289,False,-0.1565,negligible
+Policy A vs Policy B,abstention_rate,0.8458,0.7808,0.9108,30.0127,0.0,True,0.0,0.0039,True,10.0042,large

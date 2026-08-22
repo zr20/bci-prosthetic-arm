@@ -1,0 +1,30 @@
+
+=== Confusion Matrices: EEGNet ===
+
+Aggregate confusion matrix (5 seeds × 9 subjects):
+                  Predicted Left   Predicted Right
+  True Left         1626 (22.6%)      1974 (27.4%)
+  True Right        1067 (14.8%)      2533 (35.2%)
+  Sensitivity (True Left rate):  0.452
+  Specificity (True Right rate): 0.704
+  Macro-F1: 0.571
+
+=== Confusion Matrices: ShallowConvNet ===
+
+Aggregate confusion matrix (5 seeds × 9 subjects):
+                  Predicted Left   Predicted Right
+  True Left         2745 (38.1%)       855 (11.9%)
+  True Right        1153 (16.0%)      2447 (34.0%)
+  Sensitivity (True Left rate):  0.762
+  Specificity (True Right rate): 0.680
+  Macro-F1: 0.721
+
+=== Summary — Mean Across Subjects and Seeds ===
+                       accuracy  macro_f1  sensitivity  specificity
+model          split                                               
+EEGNet         within     0.578     0.473        0.452        0.704
+ShallowConvNet within     0.721     0.728        0.762        0.680
+
+Saved to:
+  /Users/zarakhursheed/bci_paper/results/confusion_matrices.csv
+  /Users/zarakhursheed/bci_paper/results/confusion_summary.csv

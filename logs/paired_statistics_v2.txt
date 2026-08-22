@@ -1,0 +1,136 @@
+=== Paired Statistical Comparisons ===
+Decoder: ShallowConvNet, within-subject, seed=42
+Threshold: 0.83 (frozen)
+
+
+--- Policy A vs Policy B (success_rate) ---
+Per-subject differences (Policy B − Policy A):
+  Subject 1: +0.121
+  Subject 2: +0.059
+  Subject 3: -0.278
+  Subject 4: +0.006
+  Subject 5: +0.025
+  Subject 6: +0.052
+  Subject 7: +0.062
+  Subject 8: +0.115
+  Subject 9: +0.004
+
+Mean difference:       +0.0186 (+1.9 pp)
+95% CI:                [-0.0727, +0.1098]
+Paired t-test:         t=0.470, p=0.6512  ✗ not significant (α=0.05)
+Wilcoxon signed-rank:  W=9.0, p=0.1289  ✗ not significant (α=0.05)
+Cohen's d:             0.157  → negligible effect
+
+--- Policy A vs Policy C (success_rate) ---
+Per-subject differences (Policy C − Policy A):
+  Subject 1: +0.121
+  Subject 2: +0.059
+  Subject 3: -0.278
+  Subject 4: +0.006
+  Subject 5: +0.025
+  Subject 6: +0.052
+  Subject 7: +0.062
+  Subject 8: +0.115
+  Subject 9: +0.004
+
+Mean difference:       +0.0186 (+1.9 pp)
+95% CI:                [-0.0727, +0.1098]
+Paired t-test:         t=0.470, p=0.6512  ✗ not significant (α=0.05)
+Wilcoxon signed-rank:  W=9.0, p=0.1289  ✗ not significant (α=0.05)
+Cohen's d:             0.157  → negligible effect
+
+--- Policy B vs Policy C (success_rate) ---
+Per-subject differences (Policy C − Policy B):
+  Subject 1: +0.000
+  Subject 2: +0.000
+  Subject 3: +0.000
+  Subject 4: +0.000
+  Subject 5: +0.000
+  Subject 6: +0.000
+  Subject 7: +0.000
+  Subject 8: +0.000
+  Subject 9: +0.000
+
+Mean difference:       +0.0000 (+0.0 pp)
+95% CI:                [+nan, +nan]
+Paired t-test:         t=nan, p=nan  ✗ not significant (α=0.05)
+Wilcoxon signed-rank:  W=nan, p=nan  ✗ not significant (α=0.05)
+Cohen's d:             0.000  → negligible effect
+
+--- Policy A vs Policy B (coverage) ---
+Per-subject differences (Policy B − Policy A):
+  Subject 1: -0.844
+  Subject 2: -0.912
+  Subject 3: -0.944
+  Subject 4: -0.675
+  Subject 5: -0.938
+  Subject 6: -0.781
+  Subject 7: -0.825
+  Subject 8: -0.869
+  Subject 9: -0.825
+
+Mean difference:       -0.8458 (-84.6 pp)
+95% CI:                [-0.9108, -0.7808]
+Paired t-test:         t=-30.014, p=0.0000  ✓ significant (α=0.05)
+Wilcoxon signed-rank:  W=0.0, p=0.0039  ✓ significant (α=0.05)
+Cohen's d:             -10.005  → large effect
+
+--- Policy A vs Policy B (error_rate) ---
+Per-subject differences (Policy B − Policy A):
+  Subject 1: -0.121
+  Subject 2: -0.059
+  Subject 3: +0.278
+  Subject 4: -0.006
+  Subject 5: -0.025
+  Subject 6: -0.052
+  Subject 7: -0.062
+  Subject 8: -0.115
+  Subject 9: -0.005
+
+Mean difference:       -0.0186 (-1.9 pp)
+95% CI:                [-0.1098, +0.0727]
+Paired t-test:         t=-0.470, p=0.6512  ✗ not significant (α=0.05)
+Wilcoxon signed-rank:  W=9.0, p=0.1289  ✗ not significant (α=0.05)
+Cohen's d:             -0.157  → negligible effect
+
+--- Policy A vs Policy B (abstention_rate) ---
+Per-subject differences (Policy B − Policy A):
+  Subject 1: +0.844
+  Subject 2: +0.912
+  Subject 3: +0.944
+  Subject 4: +0.675
+  Subject 5: +0.938
+  Subject 6: +0.781
+  Subject 7: +0.825
+  Subject 8: +0.869
+  Subject 9: +0.825
+
+Mean difference:       +0.8458 (+84.6 pp)
+95% CI:                [+0.7808, +0.9108]
+Paired t-test:         t=30.013, p=0.0000  ✓ significant (α=0.05)
+Wilcoxon signed-rank:  W=0.0, p=0.0039  ✓ significant (α=0.05)
+Cohen's d:             10.004  → large effect
+
+
+=== Summary Table ===
+Comparison                Metric            Mean Diff  p (t-test)  p (Wilcox)   Cohen d       Effect
+--------------------------------------------------------------------------------------------------
+Policy A vs Policy B      success_rate        +0.0186    0.6512 ✗     0.1289 ✗      0.157    negligible
+Policy A vs Policy C      success_rate        +0.0186    0.6512 ✗     0.1289 ✗      0.157    negligible
+Policy B vs Policy C      success_rate        +0.0000       N/A ✗        N/A ✗      0.000    negligible
+Policy A vs Policy B      coverage            -0.8458    0.0000 ✓     0.0039 ✓    -10.005         large
+Policy A vs Policy B      error_rate          -0.0186    0.6512 ✗     0.1289 ✗     -0.157    negligible
+Policy A vs Policy B      abstention_rate     +0.8458    0.0000 ✓     0.0039 ✓     10.004         large
+
+Summary saved to /Users/zarakhursheed/bci_paper/results/paired_statistics.csv
+Per-subject data saved to /Users/zarakhursheed/bci_paper/results/paired_statistics_per_subject.csv
+
+=== Interpretation Guide ===
+p < 0.05    → statistically significant
+Cohen's d:
+  0.0–0.2   → negligible
+  0.2–0.5   → small
+  0.5–0.8   → medium
+  > 0.8     → large (practically meaningful)
+
+Prefer Wilcoxon over t-test for reporting — n=9 is small.
