@@ -1,0 +1,66 @@
+=== Three-Policy Replay Comparison (with confirmation) ===
+Decoder:          ShallowConvNet (within-subject)
+Seed:             42
+Frozen threshold: 0.83
+Confirmation:     YES — Policy B and C require 2 consecutive
+                  confident same-class predictions to act
+Subjects:         [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Label:            OFFLINE REPLAY SIMULATION
+
+Subject 1:
+  Policy_A_Direct: success=0.719, coverage=1.000, unsafe=45, retries=0, latency=3.35ms
+  Policy_B_ConfidenceGated: success=0.840, coverage=0.156, unsafe=4, retries=25, latency=2.23ms
+  Policy_C_SharedControl: success=0.840, coverage=0.156, unsafe=4, retries=25, latency=5.28ms
+Subject 2:
+  Policy_A_Direct: success=0.512, coverage=1.000, unsafe=78, retries=0, latency=3.03ms
+  Policy_B_ConfidenceGated: success=0.571, coverage=0.087, unsafe=6, retries=14, latency=2.31ms
+  Policy_C_SharedControl: success=0.571, coverage=0.087, unsafe=6, retries=14, latency=4.68ms
+Subject 3:
+  Policy_A_Direct: success=0.500, coverage=1.000, unsafe=80, retries=0, latency=3.02ms
+  Policy_B_ConfidenceGated: success=0.222, coverage=0.056, unsafe=7, retries=9, latency=2.25ms
+  Policy_C_SharedControl: success=0.222, coverage=0.056, unsafe=7, retries=9, latency=4.51ms
+Subject 4:
+  Policy_A_Direct: success=0.994, coverage=1.000, unsafe=1, retries=0, latency=2.16ms
+  Policy_B_ConfidenceGated: success=1.000, coverage=0.325, unsafe=0, retries=52, latency=2.17ms
+  Policy_C_SharedControl: success=1.000, coverage=0.325, unsafe=0, retries=52, latency=4.50ms
+Subject 5:
+  Policy_A_Direct: success=0.875, coverage=1.000, unsafe=20, retries=0, latency=2.12ms
+  Policy_B_ConfidenceGated: success=0.900, coverage=0.062, unsafe=1, retries=10, latency=2.27ms
+  Policy_C_SharedControl: success=0.900, coverage=0.062, unsafe=1, retries=10, latency=4.68ms
+Subject 6:
+  Policy_A_Direct: success=0.662, coverage=1.000, unsafe=54, retries=0, latency=3.03ms
+  Policy_B_ConfidenceGated: success=0.714, coverage=0.219, unsafe=10, retries=35, latency=2.27ms
+  Policy_C_SharedControl: success=0.714, coverage=0.219, unsafe=10, retries=35, latency=4.60ms
+Subject 7:
+  Policy_A_Direct: success=0.688, coverage=1.000, unsafe=50, retries=0, latency=3.02ms
+  Policy_B_ConfidenceGated: success=0.750, coverage=0.175, unsafe=7, retries=28, latency=2.27ms
+  Policy_C_SharedControl: success=0.750, coverage=0.175, unsafe=7, retries=28, latency=4.80ms
+Subject 8:
+  Policy_A_Direct: success=0.838, coverage=1.000, unsafe=26, retries=0, latency=2.41ms
+  Policy_B_ConfidenceGated: success=0.952, coverage=0.131, unsafe=1, retries=21, latency=2.08ms
+  Policy_C_SharedControl: success=0.952, coverage=0.131, unsafe=1, retries=21, latency=4.77ms
+Subject 9:
+  Policy_A_Direct: success=0.781, coverage=1.000, unsafe=35, retries=0, latency=2.98ms
+  Policy_B_ConfidenceGated: success=0.786, coverage=0.175, unsafe=6, retries=28, latency=2.26ms
+  Policy_C_SharedControl: success=0.786, coverage=0.175, unsafe=6, retries=28, latency=4.58ms
+
+=== Final Policy Comparison (mean across 9 subjects) ===
+Metric                          Policy A       Policy B       Policy C
+-------------------------------------------------------------------
+Success rate                       0.730          0.748          0.748
+Error rate                         0.270          0.252          0.252
+Coverage                           1.000          0.154          0.154
+Abstention rate                    0.000          0.846          0.846
+Unsafe actions                       389             42             42
+Retries                                0            222            222
+Mean latency (ms)                  2.792          2.235          4.711
+
+Decoder:   ShallowConvNet, within-subject, seed=42
+Threshold: 0.83 (frozen on dev subjects 7-9)
+Confirmation: required (2 consecutive confident predictions)
+
+Saved:
+  /Users/zarakhursheed/bci_paper/results/policy_comparison_summary_v2.csv
+  /Users/zarakhursheed/bci_paper/results/policy_comparison_trials_v2.csv
+  /Users/zarakhursheed/bci_paper/results/latency_breakdown.csv
+Note: OFFLINE REPLAY SIMULATION per publication plan.

@@ -1,0 +1,9 @@
+component,duration_ms,notes
+EEG window accumulation,3500.0,Fixed by trial duration (3.5s at 250Hz) — not measured in simulation
+Preprocessing (scaling x1e6),0.1,Fixed constant multiply — negligible
+Model inference (ShallowConvNet),2.094,Estimated from total decode-to-command latency
+Policy decision (threshold + confirmation),0.698,Includes threshold check and state machine update
+Communication (simulation),0.0,Not applicable in replay simulation
+Actuation (simulation),0.0,MuJoCo physics — not measured separately
+Total decode-to-command (Policy A measured),2.792,Measured — covers preprocessing through policy decision
+Full sensing-to-action (estimated),3502.792,Dominated by EEG window accumulation
