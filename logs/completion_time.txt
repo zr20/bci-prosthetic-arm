@@ -1,0 +1,42 @@
+=== Completion Time Analysis ===
+Trial duration: 4.5s
+Completion time = mean trials needed per accepted command × 4.5s
+
+Policy                          Subject   N Accepted   Mean Trials  Mean Time (s)
+--------------------------------------------------------------------------------
+Policy_A_Direct                       1          160           1.0            4.5
+Policy_A_Direct                       2          160           1.0            4.5
+Policy_A_Direct                       3          160           1.0            4.5
+Policy_A_Direct                       4          160           1.0            4.5
+Policy_A_Direct                       5          160           1.0            4.5
+Policy_A_Direct                       6          160           1.0            4.5
+Policy_A_Direct                       7          160           1.0            4.5
+Policy_A_Direct                       8          160           1.0            4.5
+Policy_A_Direct                       9          160           1.0            4.5
+Policy_B_ConfidenceGated              1           25          6.28          28.26
+Policy_B_ConfidenceGated              2           14         11.14          50.14
+Policy_B_ConfidenceGated              3            9         17.78           80.0
+Policy_B_ConfidenceGated              4           52          3.08          13.85
+Policy_B_ConfidenceGated              5           10          15.7          70.65
+Policy_B_ConfidenceGated              6           35          4.51          20.31
+Policy_B_ConfidenceGated              7           28          5.57          25.07
+Policy_B_ConfidenceGated              8           21          7.62          34.29
+Policy_B_ConfidenceGated              9           28          5.64          25.39
+Policy_C_SharedControl                1           25          6.28          28.26
+Policy_C_SharedControl                2           14         11.14          50.14
+Policy_C_SharedControl                3            9         17.78           80.0
+Policy_C_SharedControl                4           52          3.08          13.85
+Policy_C_SharedControl                5           10          15.7          70.65
+Policy_C_SharedControl                6           35          4.51          20.31
+Policy_C_SharedControl                7           28          5.57          25.07
+Policy_C_SharedControl                8           21          7.62          34.29
+Policy_C_SharedControl                9           28          5.64          25.39
+
+=== Summary — Mean Across 9 Subjects ===
+                          mean_trials_per_command  mean_completion_time_s
+policy                                                                   
+Policy_A_Direct                             1.000                   4.500
+Policy_B_ConfidenceGated                    8.591                  38.662
+Policy_C_SharedControl                      8.591                  38.662
+
+Saved to /Users/zarakhursheed/bci_paper/results/completion_time.csv
