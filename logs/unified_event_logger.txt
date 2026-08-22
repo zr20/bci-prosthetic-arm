@@ -1,0 +1,25 @@
+Loaded 4320 trial records from policy comparison.
+Policies: ['Policy_A_Direct', 'Policy_B_ConfidenceGated', 'Policy_C_SharedControl']
+Subjects: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+=== Unified Event Log Summary ===
+
+Total events logged: 13,404
+
+event_type                ACCEPTED  INFERENCE  PROPOSAL  REJECTED  RETRY  WINDOW
+policy                                                                          
+Policy_A_Direct               1440       1440         0         0      0    1440
+Policy_B_ConfidenceGated       222       1440       613       605    222    1440
+Policy_C_SharedControl         222       1440       613       605    222    1440
+
+Saved to /Users/zarakhursheed/bci_paper/results/unified_event_log.csv
+
+Event types:
+  WINDOW   — EEG epoch received
+  INFERENCE— decoder output (class + confidence)
+  PROPOSAL — first confident prediction, awaiting confirmation
+  ACCEPTED — confirmed command issued
+  REJECTED — below threshold, no command
+  RETRY    — user repeated signal after rejection
+  STATE    — state machine transition (Policy C only)
+  RESET    — state machine returned to IDLE
