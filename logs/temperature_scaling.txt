@@ -1,0 +1,27 @@
+=== Temperature Scaling — ShallowConvNet ===
+Calibration split: 20% of training data (held out before training)
+
+Subject      Temp T   ECE before   ECE after   Improvement   Accuracy
+--------------------------------------------------------------------
+1             1.265       0.0808      0.0283       +0.0525      0.738
+2             2.095       0.2877      0.1780       +0.1097      0.487
+3             2.006       0.2461      0.1491       +0.0970      0.481
+4             1.385       0.0163      0.0132       +0.0030      0.969
+5             0.908       0.0624      0.0501       +0.0123      0.887
+6             1.451       0.2405      0.1902       +0.0502      0.625
+7             1.835       0.2153      0.1223       +0.0929      0.594
+8             1.618       0.0343      0.0778       -0.0435      0.819
+9             1.764       0.0442      0.1075       -0.0632      0.806
+
+Mean ECE before temperature scaling: 0.1364
+Mean ECE after  temperature scaling: 0.1018
+Mean improvement:                    +0.0345
+Mean temperature T:                  1.592
+Mean accuracy (post-scaling):        0.712
+
+Saved to /Users/zarakhursheed/bci_paper/results/temperature_scaling.csv
+
+Note: temperature scaling fitted on held-out calibration
+data (20% of training set) per subject. Never fitted on
+test data. Accuracy is unchanged by temperature scaling
+(only probabilities are adjusted, not predictions).
