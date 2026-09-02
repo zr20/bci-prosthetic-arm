@@ -3,8 +3,8 @@
 **Paper:** Confidence-Aware Shared Control for Two-Class Motor-Imagery
 Interaction with an Assistive Robotic Arm
 **Target venue:** CHI 2027
-**Author:** Zara Khursheed — NYU Abu Dhabi eBrain Lab
-**Supervisor:** Professor Abdul Basit
+**Author:** Zara Khursheed
+**Supervisor:** Professor Abdul Basit — NYU Abu Dhabi eBrain Lab
 
 ---
 
